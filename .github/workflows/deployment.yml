@@ -71,7 +71,7 @@ jobs:
               --name ${{ env.IMAGE_NAME }} \
               -p 3000:3000 \
               --restart always \
-              ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:lastest 
+              ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest 
 
             # Clean up images
             docker image prune -f
